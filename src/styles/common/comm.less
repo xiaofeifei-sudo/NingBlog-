@@ -1,0 +1,260 @@
+
+body {
+  background-color: #f6f6f6;
+}
+
+body.reader-black-font .container .article .title,
+body.reader-black-font .main .title,
+body.reader-black-font .preview .title {
+  font-family: -apple-system, SF UI Display, Arial, PingFang SC,
+    Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+}
+
+.h4,
+h4 {
+  font-size: 18px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+
+.comm-main {
+  margin-top: 4.2rem;
+}
+
+
+.comm-left,
+.comm-box,
+.comm-right{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1.3rem;
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.comm-box,
+.comm-right {
+  margin-left: 0.5rem;
+}
+
+
+b, strong {
+  font-weight: 700;
+}
+
+.center {
+  text-align: center;
+}
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+ul{
+  padding: 0;
+}
+ul li{
+  list-style: none;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 2.5rem;
+  font-family: "Ink Free";
+  background: -webkit-linear-gradient(
+    right,
+    #ffffff,
+    #ff0000 6.25%,
+    #ff7d00 12.5%,
+    #ffff00 18.75%,
+    #00ff00 25%,
+    #00ffff 31.25%,
+    #0000ff 37.5%,
+    #ff00ff 43.75%,
+    #ffff00 50%,
+    #ff0000 56.25%,
+    #ff7d00 62.5%,
+    #ffff00 68.75%,
+    #00ff00 75%,
+    #00ffff 81.25%,
+    #0000ff 87.5%,
+    #ff00ff 93.75%,
+    #ffff00 100%
+  );
+
+  /* 设置背景图片绘制区域 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+
+  animation: logo-animation 5s infinite linear;
+}
+
+.comm-title {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.comm-title > span:first-child {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.list-title {
+  font-size: 1.3rem;
+  color: #1e90ff;
+  padding: 0 0.5rem;
+}
+.list-context {
+  color: #777;
+  padding: 0.5rem;
+}
+.list-icon {
+  padding: 0.5rem 0;
+  color: #aaa;
+}
+.list-icon span {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* 渲染md样式 */
+pre {
+  display: block;
+  background-color: #000000 !important;
+  padding: 0.5rem !important;
+  overflow-y: auto;
+  font-weight: 400;
+  font-family: STKaiti;
+  border-radius: 1rem;
+  scrollbar-width: none;
+}
+
+pre::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0;
+}
+
+pre > code {
+  border: 0px !important;
+  background-color: #000000 !important;
+  color: rgb(12, 252, 4);
+  font-size: 1rem;
+}
+
+
+code {
+  display: inline-block;
+  background-color: #f3f3f3;
+  border: 1px solid #fdb9cc;
+  border-radius: 3px;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #4f4f4f;
+  margin: 0px 3px;
+}
+
+.ant-back-top-inner {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 5rem;
+}
+
+.cssnicehover {
+  transition: all linear 0.5s;
+}
+
+.cssnicehover:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -5px, 0);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.ant-back-top-inner:hover {
+  /* 置顶特效 */
+  animation: btn-pudding 2s linear;
+}
+
+.ant-back-top-inner-sm {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 3rem;
+}
+
+img{
+  width: 100%;
+}
+
+// 头像特效
+.ant-avatar:hover{
+  animation: btn-pudding 2s linear;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+  border-bottom: none;
+}
+
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  border-bottom: none;
+}
+
+.ant-menu-horizontal {
+  border: none;
+}
+
+/* 调整返回顶部按钮的位置 */
+/* .ant-back-top{
+    left: 100px;
+} */
+
+
+
+

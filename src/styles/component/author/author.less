@@ -1,0 +1,56 @@
+.author-container {
+  text-align: center;
+  padding: 1rem;
+  .author-avatar {
+    animation: light 2s linear both infinite;
+    transition: all 0.5s ease-in-out 0.5s;
+  }
+  .author-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: blueviolet;
+    font-family: "Ink Free";
+  }
+  .author-introduction {
+    font-size: 0.8rem;
+    color: #999;
+    .anthor-socializing{
+        background-color: rgb(97, 97, 97);
+        margin: 0 0.3rem;
+        &:hover{
+            background-color: blueviolet;
+        }
+    }
+    .anthor-socializing-qa{
+        width: 100px;
+    }
+  }
+  div{
+      margin-bottom: 1rem;
+  }
+}
+
+.progress {
+  margin-top: 15px;
+}
+
+.skill-container {
+  margin-top: 0.5rem;
+}
+.skill-container .skill-content {
+  border-radius: 0.3rem;
+  margin-bottom: 0.2rem;
+  overflow: hidden;
+}
+
+@keyframes light {
+  from {
+    box-shadow: 0 0 1px white, 0 0 5px white, 0 0 10px white, 0 0 20px purple,
+      0 0 5px purple, 0 0 11px pink;
+  }
+
+  to {
+    box-shadow: 0 0 5px white, 0 0px 10px yellow, 0 0px 15px yellow,
+      0 0px 8px green, 0 0px 10px green, 0 0px 12px blue;
+  }
+}

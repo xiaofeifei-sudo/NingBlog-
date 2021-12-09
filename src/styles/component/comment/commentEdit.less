@@ -1,0 +1,59 @@
+.input-div{
+    position: absolute;
+    border-radius: 1rem;
+    left: 16px;
+    top: 20px;
+    padding: 0 6px;
+    transform-origin: 0 0;
+    pointer-events: none;
+    transition: all .25s;
+    opacity: 0;
+    color: #fff;
+    background-color: #8A2BE2;
+  }
+
+#comments_edit{
+    resize: vertical;
+    overflow: auto;
+    font-family: "Microsoft JhengHei", miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, Sans-Serif;
+    font-size: 16.8px;
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    max-height: 200px;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: url('http://192.168.119.140:8080/group1/blog_images/20210912/15/30/6/comment.png') right bottom no-repeat;
+
+    img{
+        width: 2rem;
+        animation: shake 5s infinite ease-in-out;
+    }
+}
+.comment-func-box{
+    .comment-emoji{
+        margin-left: 1rem;
+    }
+    .comment-judge-sign{
+        display: inline-block;
+        margin-left: 2rem;
+        line-height: 64px;
+    }
+}
+#comments_edit:empty:before{
+    content: attr(placeholder);   /* element attribute*/
+    color:#8A2BE2;
+}
+#comments_edit:focus:before{
+    content:none;
+}
+#comments_edit:hover{
+    border: 1px solid #8A2BE2;
+}
+#comments_edit:focus{
+    border: 1px solid#8A2BE2;
+    box-shadow: 0 0 10px 0#8A2BE2;
+    outline:none;
+}

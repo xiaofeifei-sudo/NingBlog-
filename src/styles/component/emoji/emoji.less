@@ -1,0 +1,40 @@
+.emoji-container{
+    .meme_btn{
+        float: left;
+        &:hover{
+            animation: shake 5s infinite ease-in-out;
+        }
+    }
+    .meme_color{
+        &:hover{
+            border: 1px solid #8A2BE2 !important;
+        }
+    }
+    .emoji-content{
+        text-align: left;
+        overflow: scroll;
+        border-radius: 4px;
+        width: 360%;
+        height: 10rem;
+        background-color: #fff;
+        position: absolute;
+        left: 0px;
+        top: -10rem;
+        border: 1px solid #8a2be2;
+        animation: b 1s linear;
+    }
+}
+
+.shakeimg{
+    background-color: #f7f7f7;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px;
+    &:hover{
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        animation: shake 5s infinite ease-in-out;
+    }
+}
+
